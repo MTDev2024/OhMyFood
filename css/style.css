@@ -18,8 +18,155 @@
     --background-color: rgba(234, 234, 234, 1);
     --green-background: rgba(153, 226, 208, 1);
     --green-font: rgba(0, 135, 102, 1);
+    --light-grey-background: rgba(234, 234, 234, 1);
+
     --grey-background: rgba(53, 53, 53, 1);
 
     --font-logo-title: 'Shrikhand', cursive;
     --font-body-text: 'Roboto', sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+
+body {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    width: 100%;
+}
+
+.main-container {
+    width: 100%;
+}
+
+section {
+  margin-block: 40px;
+}
+
+.section-title {
+    font-family: var(--font-body-text);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+}
+
+.site-title {
+    display: flex;
+    font-family: Shrikhand;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+}
+
+.site-location {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: var(--light-grey-background);
+    gap: 30px;
+}
+
+.fa-location-dot {
+    color: rgba(53, 53, 53, 1);
+}
+
+.site-location-description {
+    font-family: var(--font-body-text);
+    font-weight: 500;
+    font-size: 16px;    
+}   
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-family: var(--font-body-text);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-description {
+    font-family: var(--font-body-text);
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.cta-btn {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    color: white;
+    font-size: 16px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    margin-inline: 20px;
+}
+
+.fonctionnement-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  /* Tablette */
+}
+
+@media (min-width: 1024px) {
+  /* Desktop */
 }
