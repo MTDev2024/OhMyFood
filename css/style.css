@@ -30,7 +30,6 @@ main {
   width: 100%;
 }
 
-
 body {
     width: 100%;
 }
@@ -40,17 +39,12 @@ nav {
     flex-direction: column;
 }
 
-
 header {
     width: 100%;
 }
 
 .main-container {
     width: 100%;
-}
-
-section {
-  margin-block: 40px;
 }
 
 .section-title {
@@ -99,11 +93,13 @@ section {
 }   
 
 .hero {
+    background-color: var(--light-grey-background);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     align-items: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .hero-title {
@@ -115,6 +111,8 @@ section {
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding-inline:  60px;
+    padding-bottom: 20px;
 }
 
 .hero-description {
@@ -124,6 +122,8 @@ section {
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
+    padding-inline: 30px;
+    padding-bottom: 20px;
 }
 
 .cta-btn {
@@ -146,15 +146,30 @@ section {
 .fonctionnement-container {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
 }
 
 .btn-container {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
-
-
+.fonctionnement-btn {
+    background: var(--background-color);
+    color: black;
+    border: none;
+    font-family: var(--font-body-text);
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    height: 72px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
 
 
 
