@@ -99,6 +99,8 @@ donc l’élément est "accroché par le haut", pas centré. */
 
 .menu-header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   
 }
 
@@ -116,6 +118,20 @@ donc l’élément est "accroché par le haut", pas centré. */
     font-size: 26px;
 }
 
+.menu-container {
+  
+}
+
+.menu-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 30px;
+
+
+}
+
 .menu-category h3 {
   font-family: var(--font-body-text);
   font-weight: 300;
@@ -124,10 +140,24 @@ donc l’élément est "accroché par le haut", pas centré. */
   letter-spacing: 0%;
   text-transform: uppercase;
   text-decoration: underline;
+  align-self: start;
+}
+
+.menu-items {
+  width: 100%;
 }
 
 .menu-item {
-
+  border-radius: 15px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  
 }
 
 .menu-item h4 {
@@ -136,11 +166,22 @@ font-weight: 500;
 font-size: 18px;
 line-height: 100%;
 letter-spacing: 0%;
+padding-left: 10px;
+padding-bottom: 7px;
 }
 
 .item-text {
   display: flex;
+    width: 100%;  
   justify-content: space-between;
+}
+
+.item-text p {
+  padding-left: 10px;
+}
+
+.item-price {
+  padding-right: 10px;
 }
 
 .menu-button {
