@@ -312,10 +312,48 @@ header {
     font-size: 17px;
 }
 
-.fa-heart {
-    font-size: 26px;
-    padding: 15px;
+
+.card-favorite {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* pour clip-path */
 }
+
+.card-favorite svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.heart-outline {
+  stroke: black;
+  fill: none;
+  z-index: 2;
+}
+
+.heart-fill {
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 0.5s ease;
+  z-index: 1;
+  fill: url(#grad1);
+}
+
+.card-favorite:hover .heart-fill {
+  clip-path: inset(0 0 0 0);
+}
+
 
 footer {
     background-color: var(--grey-background);
@@ -357,3 +395,5 @@ footer i {
 @media (min-width: 1024px) {
   /* Desktop */
 }
+
+
