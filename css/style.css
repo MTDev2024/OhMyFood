@@ -16,6 +16,8 @@
     --tertiary-color: #99E2D0;
 
     --background-color: rgba(234, 234, 234, 1);
+    --lightest-background-color: rgba(246, 246, 246, 1);
+
     --green-background: rgba(153, 226, 208, 1);
     --green-font: rgba(0, 135, 102, 1);
     --light-grey-background: rgba(234, 234, 234, 1);
@@ -39,16 +41,16 @@ body {
     width: 100%;
 }
 
+.main-container {
+    width: 100%;
+}
+
 nav {
     display: flex;
     flex-direction: column;
 }
 
 header {
-    width: 100%;
-}
-
-.main-container {
     width: 100%;
 }
 
@@ -65,7 +67,7 @@ header {
 
 .site-title {
     display: flex;
-    font-family: Shrikhand;
+    font-family: var(--font-logo-title);
     font-weight: 400;
     font-style: italic;
     font-size: 30px;
@@ -100,18 +102,19 @@ header {
 
 .site-location-description {
     font-family: var(--font-body-text);
+    color: rgba(53, 53, 53, 1);
     font-weight: 500;
     font-size: 16px;    
 }   
 
 .hero {
-    background-color: var(--light-grey-background);
+    background: var(--lightest-background-color);
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 .hero-title {
@@ -135,14 +138,14 @@ header {
     letter-spacing: 0%;
     text-align: center;
     padding-inline: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
 }
 
 .cta-btn {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     color: white;
     font-size: 16px;
-    padding: 15px 20px;
+    padding: 20px;
     border: none;
     border-radius: 30px;
     font-weight: bold;
@@ -163,6 +166,12 @@ header {
 }
 
 
+
+/********** REPRENDRE ICI **********/
+
+
+
+
 .fonctionnement-container {
     display: flex;
     flex-direction: column;
@@ -175,6 +184,10 @@ header {
     gap: 20px;
     padding: 20px;
     min-width: 335px;
+}
+
+.step-text {
+    padding-left: 10px;
 }
 
 .step-number {
@@ -198,7 +211,7 @@ header {
 }
 
 .fonctionnement-btn {
-    background: var(--background-color);
+    background: var(--lightest-background-color);
     color: black;
     border: none;
     font-family: var(--font-body-text);
@@ -209,6 +222,8 @@ header {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     padding: 0 24px;
     position: relative;
+    text-align: start;
+    padding-left: 70px;
 }
 
 .fonctionnement-btn i {
@@ -217,8 +232,7 @@ header {
 }
 
 .restaurants-container {
-    margin-top: 60px;
-    padding-top: 30px;
+    
     background-color: var(--light-grey-background);
     padding-bottom: 50px;
   
