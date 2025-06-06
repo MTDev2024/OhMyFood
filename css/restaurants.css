@@ -86,7 +86,7 @@ donc l’élément est "accroché par le haut", pas centré. */
 .menu-section {
   display: flex;
   background: rgba(246, 246, 246, 1);
-  border-radius: 20px 20px 0 0;
+  border-radius: 40px 40px 0 0;
   top: -40px;
    position: relative;
   border: red solid 1px;
@@ -98,7 +98,7 @@ donc l’élément est "accroché par le haut", pas centré. */
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  padding: 13px;
+  padding: 17px;
 }
 
 
@@ -106,7 +106,6 @@ donc l’élément est "accroché par le haut", pas centré. */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .restaurant-title {
@@ -133,7 +132,9 @@ donc l’élément est "accroché par le haut", pas centré. */
   align-items: center;
   margin-bottom: 50px;
   gap: 30px;
+}
 
+.menu-category-title {
 
 }
 
@@ -196,17 +197,26 @@ padding-bottom: 7px;
 }
 
 .btn-order {
-   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    color: white;
-    font-size: 16px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s ease;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  height: 50px;
+  width: 186px;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 }
+
+.btn-order:hover,
+.btn-order:active {
+    background: linear-gradient(193.33deg, #A776E0, #FF94E1);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
 footer {
     background-color: var(--grey-background);
     color: white;
