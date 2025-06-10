@@ -32,6 +32,10 @@ a {
   color: inherit;
 }
 
+li {
+  list-style: none;
+}
+
 
 nav {
   display: flex;
@@ -145,7 +149,13 @@ nav {
   outline-offset: 3px;
 }
 
+.container {
+  
+  margin: 0 auto;
+}
+
 .fonctionnement-container {
+  
   display: flex;
   flex-direction: column;
   padding-top: 30px;
@@ -210,8 +220,13 @@ nav {
   color: #666;
 }
 
+.fonctionnement-btn i:hover {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
 .restaurants-container {
-  background-color: var(--light-grey-background);
+    background-color: var(--light-grey-background);
   padding-bottom: 65px;
 }
 
@@ -306,21 +321,6 @@ nav {
   font-size: 17px;
 }
 
-.card-favorite {
-  position: absolute;
-  bottom: 25px;
-  right: 20px;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* pour clip-path */
-}
 
 .card-favorite svg {
   position: absolute;
@@ -336,9 +336,28 @@ nav {
   z-index: 2;
 }
 
+
+.card-favorite {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* pour clip-path */
+}
+ 
+
+
 .heart-fill {
   clip-path: inset(100% 0 0 0);
-  transition: clip-path 0.5s ease;
+  transition: clip-path 1s ease;
   z-index: 1;
   fill: url(#grad1);
 }
@@ -346,6 +365,8 @@ nav {
 .card-favorite:hover .heart-fill {
   clip-path: inset(0 0 0 0);
 }
+
+
 
 footer {
   background-color: var(--grey-background);
@@ -387,9 +408,8 @@ footer i {
   /* Desktop */
   
 
-
 .fonctionnement-container {
-  width: 100%;
+  border: solid 1px red;
 }
 
 .fonctionnement-container .section-title {
@@ -398,20 +418,23 @@ footer i {
 
 .btn-container {
   display: flex;
-  flex-direction: row;
-  padding-inline: 195px;
-  justify-content: center;
+  flex-direction: row; 
 }
 
 
 .fonctionnement-btn {
   flex: 1;
-  justify-content: start;
   padding-left: 60px;
 }
 
 .step-text {
   padding-left: 50px;
+}
+
+
+.restaurants-container {
+  
+  border: solid 1px red;
 }
 
   .restaurant-card-container {
@@ -426,4 +449,40 @@ footer i {
   .section-title {
         padding: 180px;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  
+}
+
+.footer-title {
+  
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 120px;
+}
+
+footer ul li {
+  
+}
+
+footer i {
+  
 }
