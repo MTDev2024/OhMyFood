@@ -147,9 +147,6 @@ nav {
   outline-offset: 3px;
 }
 
-.container {
-  margin: 0 auto;
-}
 
 .fonctionnement-container {
   display: flex;
@@ -385,22 +382,39 @@ footer i {
 @media (min-width: 1024px) {
   /* Desktop */
 
+  .hero-title {
+    font-size: 40px;
+  }
+
   .fonctionnement-container {
     border: solid 1px red;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .fonctionnement-container .section-title {
+    padding-left: 180px;
   }
 
   .btn-container {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    width: 1053px;
+    margin: 0 auto;
+    border: solid 1px green;
+    padding-inline: 0;
+    gap: 25px;  
   }
 
   .fonctionnement-btn {
+    box-sizing: border-box;
     flex: 1;
-    padding-left: 60px;
+    padding-left: 45px;
   }
 
   .step-text {
-    padding-left: 50px;
+    padding-left: 18px;
   }
 
   .restaurants-container {
@@ -414,6 +428,7 @@ footer i {
   }
 
   .restaurant-card-container {
+     border: solid 1px yellow;
     max-width: 1080px;
     margin: 0 auto;
     display: grid;
