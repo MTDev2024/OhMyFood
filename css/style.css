@@ -102,7 +102,7 @@ nav {
 .hero-title {
   font-family: var(--font-body-text);
   font-weight: 700;
-  font-size: 24px;
+  font-size: clamp(24px, 5vw, 40px);
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
@@ -382,9 +382,14 @@ footer i {
 @media (min-width: 1024px) {
   /* Desktop */
 
-  .hero-title {
-    font-size: 40px;
+  .section-wrapper {
+    width: 100%;
   }
+
+  .restaurants-container-wrapper {
+    background-color: var(--light-grey-background);
+  }
+
 
   .fonctionnement-container {
     border: solid 1px red;
