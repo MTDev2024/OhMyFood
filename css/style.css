@@ -450,22 +450,24 @@ footer i {
 
 
 
-footer {
+.site-footer {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 70px;
+  height: 115px;
 }
 
-.footer-title {
-}
 
 footer ul {
   display: flex;
   flex-direction: row;
-  justify-content: end;
-  padding-right: 120px;
+  gap: 20px;
+  padding-right: 60px;
+}
+  
+.footer-title {
+  padding: 0;
+  margin: 0;
 }
 
-footer ul li {
-}
-
-footer i {
-}
 }
