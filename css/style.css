@@ -466,8 +466,12 @@ footer i {
 }
 
 .footer-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   padding: 0;
   margin: 0;
+  padding-bottom: 20px;
   border: solid 1px blue;
 }
 
@@ -483,6 +487,9 @@ footer ul li {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  padding: 0;
+  margin: 0;
+  border: solid 2px green ;
 }
 
 
