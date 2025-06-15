@@ -378,7 +378,6 @@ footer i {
 }
 
 
-
 @media (min-width: 1024px) {
   /* Desktop */
 
@@ -450,24 +449,41 @@ footer i {
 
 
 
-.site-footer {
+.footer-wrapper {
+  background-color: var(--grey-background);
+  width: 100%;
+  border: solid 1px brown;
+}
+
+ footer {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row-reverse;
   padding-right: 70px;
   height: 115px;
+  border: solid 1px violet;
 }
 
+.footer-title {
+  padding: 0;
+  margin: 0;
+  border: solid 1px blue;
+}
 
 footer ul {
   display: flex;
   flex-direction: row;
   gap: 20px;
   padding-right: 60px;
+  border: solid 1px orange;
 }
-  
-.footer-title {
-  padding: 0;
-  margin: 0;
+
+footer ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
+
 
 }
