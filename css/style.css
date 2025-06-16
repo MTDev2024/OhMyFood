@@ -27,6 +27,61 @@
   --font-body-text: "Roboto", sans-serif;
 }
 
+/*********** LOADER ***********/
+
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--lightest-background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: loader-wrapper-animation 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loader-wrapper-animation {
+  0% {
+    opacity: 1; visibility: visible;
+  }
+  100% {
+    opacity: 0; visibility: hidden;
+  }
+}
+
+.loader {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 10px ;
+  border-radius: 50%;
+  border-color: var(--tertiary-color) transparent var(--tertiary-color) transparent;
+  animation: loader-animation 3s linear infinite;
+  transition: 0.5s;
+}
+
+
+@keyframes loader-animation {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.25);
+  }
+  100% {
+    transform: rotate(-180deg) scale(1);
+  }
+}
+
+
+/*********** FIN LOADER ***********/
+
 a {
   text-decoration: none;
   color: inherit;

@@ -31,6 +31,7 @@
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 nav {
@@ -40,7 +41,7 @@ nav {
   align-items: center;
   justify-content: center;
   height: 63px;
-    border: solid red 1px;
+  border: solid red 1px;
 }
 
 .site-goback {
@@ -114,9 +115,13 @@ donc l’élément est "accroché par le haut", pas centré. */
   font-style: italic;
   font-size: 28px;
   line-height: 100%;
-  letter-spacing: 0%;
   padding-top: 25px;
+  padding-bottom: 40px;
 }
+
+
+
+
 
 .fa-heart {
     font-size: 26px;
@@ -134,10 +139,6 @@ donc l’élément est "accroché par le haut", pas centré. */
   gap: 30px;
 }
 
-.menu-category-title {
-
-}
-
 .menu-category h3 {
   font-family: var(--font-body-text);
   font-weight: 300;
@@ -145,7 +146,8 @@ donc l’élément est "accroché par le haut", pas centré. */
   line-height: 100%;
   letter-spacing: 0%;
   text-transform: uppercase;
-  text-decoration: underline;
+  border-bottom: solid 3px var(--tertiary-color);
+  padding-bottom: 9px;
   align-self: start;
 }
 
@@ -163,17 +165,14 @@ donc l’élément est "accroché par le haut", pas centré. */
   align-items: start;
   background: rgba(255, 255, 255, 1);
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
-  
 }
 
 .menu-item h4 {
   font-family: var(--font-body-text);
-font-weight: 500;
-font-size: 18px;
-line-height: 100%;
-letter-spacing: 0%;
-padding-left: 10px;
-padding-bottom: 7px;
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-bottom: 7px;
 }
 
 .item-text {
@@ -188,6 +187,9 @@ padding-bottom: 7px;
 
 .item-price {
   padding-right: 10px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .menu-button {
