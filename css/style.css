@@ -203,6 +203,8 @@ nav {
 }
 
 
+/*********** FONCTIONNEMENT ***********/
+
 .fonctionnement-container {
   display: flex;
   flex-direction: column;
@@ -272,6 +274,9 @@ nav {
   font-size: 18px;
   color: var(--primary-color);
 }
+
+
+/*********** RESTAURANTS ***********/
 
 .restaurants-container {
   background-color: var(--light-grey-background);
@@ -396,6 +401,10 @@ nav {
   clip-path: inset(0 0 0 0);
 }
 
+
+
+/*********** FOOTER ***********/
+
 footer {
   background-color: var(--grey-background);
   color: white;
@@ -446,7 +455,6 @@ footer i {
 
 
   .fonctionnement-container {
-    border: solid 1px red;
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -461,7 +469,6 @@ footer i {
     flex-direction: row;
     width: 1053px;
     margin: 0 auto;
-    border: solid 1px green;
     padding-inline: 0;
     gap: 25px;  
   }
@@ -479,7 +486,6 @@ footer i {
   .restaurants-container {
     margin: 0 auto;
     max-width: 1440px;
-    border: solid 1px red;
   }
 
   .restaurants-container .section-title {
@@ -487,7 +493,6 @@ footer i {
   }
 
   .restaurant-card-container {
-     border: solid 1px yellow;
     max-width: 1080px;
     margin: 0 auto;
     display: grid;
@@ -496,7 +501,6 @@ footer i {
     grid-column-gap: 100px;
     grid-row-gap: 50px;
   }
-
 
   .restaurant-card {
     height: 251px;
@@ -507,7 +511,6 @@ footer i {
 .footer-wrapper {
   background-color: var(--grey-background);
   width: 100%;
-  border: solid 1px brown;
 }
 
  footer {
@@ -517,7 +520,6 @@ footer i {
   flex-direction: row-reverse;
   padding-right: 70px;
   height: 115px;
-  border: solid 1px violet;
 }
 
 .footer-title {
@@ -527,7 +529,6 @@ footer i {
   padding: 0;
   margin: 0;
   padding-bottom: 20px;
-  border: solid 1px blue;
 }
 
 footer ul {
@@ -535,7 +536,6 @@ footer ul {
   flex-direction: row;
   gap: 20px;
   padding-right: 60px;
-  border: solid 1px orange;
 }
 
 footer ul li {
@@ -544,8 +544,6 @@ footer ul li {
   justify-content: end;
   padding: 0;
   margin: 0;
-  border: solid 2px green ;
 }
-
 
 }
