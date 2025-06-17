@@ -53,15 +53,13 @@ nav {
   font-size: 24px;
 }
 
-/* Cette propriété place le haut de l’élément (la flèche) à 50% de la hauteur de son parent (ici, le <nav>).
+/* Place le haut de la flèche à 50% de la hauteur de son parent  le <nav>.
 
 👉 Ça le place à moitié verticalement, mais pas encore centré exactement. Pourquoi ?
 
 Parce qu’à ce stade, seul le haut de la flèche est à 50% :
 
 donc l’élément est "accroché par le haut", pas centré. */
-
-
 
 .site-title {
     display: flex;
@@ -70,11 +68,9 @@ donc l’élément est "accroché par le haut", pas centré. */
     font-style: italic;
     font-size: 30px;
     line-height: 100%;
-    letter-spacing: 0%;
     text-align: center;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .restaurant-img img {
@@ -83,16 +79,13 @@ donc l’élément est "accroché par le haut", pas centré. */
   object-fit: cover;
 }
 
-
 .menu-section {
   display: flex;
   background: rgba(246, 246, 246, 1);
   border-radius: 40px 40px 0 0;
   top: -40px;
-   position: relative;
-  border: red solid 1px;
+  position: relative;
 }
-
 
 .menu-container {
   display: flex;
@@ -101,7 +94,6 @@ donc l’élément est "accroché par le haut", pas centré. */
   width: 100%;
   padding: 17px;
 }
-
 
 .menu-header {
   display: flex;
@@ -119,18 +111,6 @@ donc l’élément est "accroché par le haut", pas centré. */
   padding-bottom: 40px;
 }
 
-
-
-
-
-.fa-heart {
-    font-size: 26px;
-}
-
-.menu-container {
-  
-}
-
 .menu-category {
   display: flex;
   flex-direction: column;
@@ -144,7 +124,6 @@ donc l’élément est "accroché par le haut", pas centré. */
   font-weight: 300;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
   text-transform: uppercase;
   border-bottom: solid 3px var(--tertiary-color);
   padding-bottom: 9px;
@@ -177,7 +156,7 @@ donc l’élément est "accroché par le haut", pas centré. */
 
 .item-text {
   display: flex;
-    width: 100%;  
+  width: 100%;  
   justify-content: space-between;
 }
 
@@ -195,7 +174,6 @@ donc l’élément est "accroché par le haut", pas centré. */
 .menu-button {
   display: flex;
   justify-content: center;
-  border: 1px solid red;
 }
 
 .btn-order {
@@ -232,8 +210,7 @@ footer {
     font-style: italic;
     font-size: 18px;
     padding-top: 20px;
-    padding-bottom: 15px;
-    
+    padding-bottom: 15px;    
 }
 
 footer ul {
