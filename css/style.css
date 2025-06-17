@@ -363,11 +363,11 @@ nav {
   height: 24px;
 }
 
-.heart-outline {
+/* .heart-outline {
   stroke: black;
   fill: none;
   z-index: 2;
-}
+} */
 
 .card-favorite {
   position: absolute;
