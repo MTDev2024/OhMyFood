@@ -40,13 +40,16 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  animation: loader-wrapper-animation 3s;
-  animation-fill-mode: forwards;
+  animation: loader-wrapper-animation 3s ease-in forwards;
 }
 
 @keyframes loader-wrapper-animation {
   0% {
     opacity: 1; visibility: visible;
+  }
+    80% {
+    opacity: 1;
+    visibility: visible; 
   }
   100% {
     opacity: 0; visibility: hidden;
