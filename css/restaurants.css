@@ -54,12 +54,8 @@ nav {
 }
 
 /* Place le haut de la flèche à 50% de la hauteur de son parent  le <nav>.
-
-👉 Ça le place à moitié verticalement, mais pas encore centré exactement. Pourquoi ?
-
-Parce qu’à ce stade, seul le haut de la flèche est à 50% :
-
-donc l’élément est "accroché par le haut", pas centré. */
+seul le haut de la flèche est à 50% 
+l’élément est "accroché par le haut", pas centré. */
 
 .site-title {
     display: flex;
