@@ -41,7 +41,6 @@ nav {
   align-items: center;
   justify-content: center;
   height: 63px;
-  border: solid red 1px;
 }
 
 .site-goback {
@@ -121,9 +120,19 @@ l’élément est "accroché par le haut", pas centré. */
   font-size: 16px;
   line-height: 100%;
   text-transform: uppercase;
-  border-bottom: solid 3px var(--tertiary-color);
   padding-bottom: 9px;
   align-self: start;
+  position: relative;
+}
+
+.menu-category h3::after {
+   content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: var(--tertiary-color);
+  bottom: -9px;
+  left: 0;
 }
 
 .menu-items {
