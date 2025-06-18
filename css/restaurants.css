@@ -1,36 +1,35 @@
 /* ==== Reset === */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-
 
 /*********** General ***********/
 
-
 :root {
-    --primary-color: #9356DC;
-    --secondary-color: #FF79DA;
-    --tertiary-color: #99E2D0;
+  --primary-color: #9356dc;
+  --secondary-color: #ff79da;
+  --tertiary-color: #99e2d0;
 
-    --background-color: rgba(234, 234, 234, 1);
-    --lightest-background-color: rgba(246, 246, 246, 1);
+  --background-color: rgba(234, 234, 234, 1);
+  --lightest-background-color: rgba(246, 246, 246, 1);
 
-    --green-background: rgba(153, 226, 208, 1);
-    --green-font: rgba(0, 135, 102, 1);
-    
-    --light-grey-background: rgba(234, 234, 234, 1);
-    --grey-background: rgba(53, 53, 53, 1);
-     
-    --font-logo-title: 'Shrikhand', cursive;
-    --font-body-text: 'Roboto', sans-serif;
+  --green-background: rgba(153, 226, 208, 1);
+  --green-font: rgba(0, 135, 102, 1);
+
+  --light-grey-background: rgba(234, 234, 234, 1);
+  --grey-background: rgba(53, 53, 53, 1);
+
+  --font-logo-title: "Shrikhand", cursive;
+  --font-body-text: "Roboto", sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -60,15 +59,15 @@ seul le haut de la flèche est à 50%
 l’élément est "accroché par le haut", pas centré. */
 
 .site-title {
-    display: flex;
-    font-family: Shrikhand;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 30px;
-    line-height: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;    
+  display: flex;
+  font-family: Shrikhand;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .restaurant-img img {
@@ -91,6 +90,7 @@ l’élément est "accroché par le haut", pas centré. */
   margin: 0 auto;
   width: 100%;
   padding: 17px;
+  animation: fadeUp 0.8s ease-out forwards;
 }
 
 .menu-header {
@@ -109,20 +109,12 @@ l’élément est "accroché par le haut", pas centré. */
   padding-bottom: 40px;
 }
 
-
 .card-favorite svg {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 24px;
   height: 24px;
 }
 
-/* .heart-outline {
-  stroke: black;
-  fill: none;
-  z-index: 2;
-} */
 
 .card-favorite {
   position: absolute;
@@ -135,8 +127,6 @@ l’élément est "accroché par le haut", pas centré. */
   width: 40px;
   height: 40px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden; /* pour clip-path */
 }
 
@@ -151,16 +141,13 @@ l’élément est "accroché par le haut", pas centré. */
   clip-path: inset(0 0 0 0);
 }
 
-
-
-
-
 .menu-category {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
   gap: 30px;
+  animation: fadeUp 0.6s ease-out forwards;
 }
 
 .menu-category h3 {
@@ -175,7 +162,7 @@ l’élément est "accroché par le haut", pas centré. */
 }
 
 .menu-category h3::after {
-   content: "";
+  content: "";
   position: absolute;
   width: 40px;
   height: 3px;
@@ -213,7 +200,7 @@ l’élément est "accroché par le haut", pas centré. */
 
 .item-text {
   display: flex;
-  width: 100%;  
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -228,11 +215,10 @@ l’élément est "accroché par le haut", pas centré. */
   font-size: 15px;
 }
 
-
 @keyframes fadeUp {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(100px);
   }
   100% {
     opacity: 1;
@@ -240,21 +226,16 @@ l’élément est "accroché par le haut", pas centré. */
   }
 }
 
-
 /* Délais en cascade */
 .menu-item:nth-child(1) {
-  animation-delay: 0s;
-}
-.menu-item:nth-child(2) {
-  animation-delay: 0.1s;
-}
-.menu-item:nth-child(3) {
   animation-delay: 0.2s;
 }
-
-
-
-
+.menu-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.menu-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
 
 .menu-button {
   display: flex;
@@ -262,7 +243,7 @@ l’élément est "accroché par le haut", pas centré. */
 }
 
 .btn-order {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   height: 50px;
   width: 186px;
   color: white;
@@ -278,38 +259,38 @@ l’élément est "accroché par le haut", pas centré. */
 
 .btn-order:hover,
 .btn-order:active {
-    background: linear-gradient(193.33deg, #A776E0, #FF94E1);
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(193.33deg, #a776e0, #ff94e1);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 footer {
-    background-color: var(--grey-background);
-    color: white;
-    padding-left: 10px;
+  background-color: var(--grey-background);
+  color: white;
+  padding-left: 10px;
 }
 
 .footer-title {
-    color: white;
-    font-family: var(--font-logo-title);
-    font-weight: 400;
-    font-style: italic;
-    font-size: 18px;
-    padding-top: 20px;
-    padding-bottom: 15px;    
+  color: white;
+  font-family: var(--font-logo-title);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 footer ul {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 footer ul li {
-    font-family: var(--font-body-text);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    padding: 5px;
+  font-family: var(--font-body-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 5px;
 }
 
 footer i {
-    padding-right: 8px;
+  padding-right: 8px;
 }
