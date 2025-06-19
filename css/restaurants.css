@@ -115,7 +115,6 @@ l’élément est "accroché par le haut", pas centré. */
   height: 24px;
 }
 
-
 .card-favorite {
   position: absolute;
   top: 45px;
@@ -199,10 +198,13 @@ l’élément est "accroché par le haut", pas centré. */
 }
 
 .item-text {
+  position: relative;
   display: flex;
-  width: 100%;
+  align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
+
 
 .item-text p {
   padding-left: 10px;
@@ -293,4 +295,51 @@ footer ul li {
 
 footer i {
   padding-right: 8px;
+}
+
+
+
+.square {
+  position: absolute;
+  right: -9px;
+  top: -6px;
+  transform: translateX(100%) translateY(-50%);
+  width: 65px;
+  height: 65px;
+  background: var(--tertiary-color);
+  border-radius: 0 15px 15px 0;
+  visibility: hidden;
+  transition: transform 0.4s ease, visibility 0s linear 0.4s;
+  z-index: 1;
+}
+
+.menu-item:hover .square {
+  transform: translateX(0) translateY(-50%);
+  visibility: visible;
+  transition: transform 0.4s ease, visibility 0s;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.check i {
+  font-size: 22px;
+  color: white;
+}
+
+.menu-item:hover .check i {
+  animation: rotateCheck 0.6s ease forwards;
+}
+
+
+@keyframes rotateCheck {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }
