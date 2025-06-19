@@ -16,6 +16,7 @@
 
   --background-color: rgba(234, 234, 234, 1);
   --lightest-background-color: rgba(246, 246, 246, 1);
+  --lightest-background-transparent: rgba(255, 255, 255, 0.7);
 
   --green-background: rgba(153, 226, 208, 1);
   --green-font: rgba(0, 135, 102, 1);
@@ -28,57 +29,71 @@
 }
 
 /*********** LOADER ***********/
-
+/* Wrapper qui couvre tout l'écran avec un fond flouté semi-transparent */
 .loader-wrapper {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: var(--lightest-background-color);
+  background: rgba(255, 255, 255, 0.85); /* Fond blanc avec un peu de transparence */
+  backdrop-filter: blur(3px); /* Effet de flou sur l’arrière-plan */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  animation: loader-wrapper-animation 3s ease-in forwards;
+  animation: loader-wrapper-animation 3s ease-in forwards; /* Animation de disparition */
 }
 
-@keyframes loader-wrapper-animation {
-  0% {
-    opacity: 1; visibility: visible;
-  }
-    80% {
-    opacity: 1;
-    visibility: visible; 
-  }
-  100% {
-    opacity: 0; visibility: hidden;
-  }
-}
-
+/* Conteneur du loader : centré, avec le logo à l’intérieur */
 .loader {
-  width: 120px;
-  height: 120px;
+  position: relative; /* Nécessaire pour positionner le ::before */
+  width: 140px;
+  height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 10px ;
-  border-radius: 50%;
-  border-color: var(--tertiary-color) transparent var(--tertiary-color) transparent;
-  animation: loader-animation 3s linear infinite;
-  transition: 0.5s;
 }
 
+/* Cercle animé qui tourne autour du logo */
+.loader::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%; /* Cercle parfait */
+  border: 8px solid transparent; /* Bordures invisibles par défaut */
+  border-top-color: var(--tertiary-color); /* Seulement le haut et le bas sont colorés */
+  border-bottom-color: var(--tertiary-color);
+  animation: spin 1.5s linear infinite; /* Rotation infinie */
+}
 
-@keyframes loader-animation {
-  0% {
-    transform: rotate(0);
+/* Logo au centre, fixe */
+.loader img {
+  width: 100px;
+  height: auto;
+  z-index: 1; /* Par-dessus le ::before */
+}
+
+/* Animation de rotation du cercle */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  50% {
-    transform: rotate(180deg) scale(1.25);
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation pour faire disparaître le loader après 3s */
+@keyframes loader-wrapper-animation {
+  0%, 80% {
+    opacity: 1;
+    visibility: visible;
   }
   100% {
-    transform: rotate(-180deg) scale(1);
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
