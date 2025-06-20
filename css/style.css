@@ -30,6 +30,7 @@
 
 /*********** LOADER ***********/
 /* Wrapper qui couvre tout l'écran avec un fond flouté semi-transparent */
+
 .loader-wrapper {
   position: fixed;
   top: 0;
@@ -160,12 +161,12 @@ nav {
   color: rgba(53, 53, 53, 1);
 }
 
-.site-location-description {
+/* .site-location-description {
   font-family: var(--font-body-text);
   color: rgba(53, 53, 53, 1);
   font-weight: 500;
   font-size: 16px;
-}
+} */
 
 input {
   font-family: var(--font-body-text);
@@ -404,11 +405,11 @@ input {
   height: 24px;
 }
 
-/* .heart-outline {
+.heart-outline {
   stroke: black;
   fill: none;
   z-index: 2;
-} */
+}
 
 .card-favorite {
   position: absolute;
@@ -434,8 +435,14 @@ input {
 }
 
 .card-favorite:hover .heart-fill {
-  clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);  
 }
+
+.card-favorite:hover .heart-outline {
+  stroke: transparent;
+  transition: stroke 0.3s ease;
+}
+
 
 /*********** FOOTER ***********/
 
