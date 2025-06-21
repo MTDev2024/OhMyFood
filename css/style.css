@@ -479,7 +479,29 @@ footer i {
 }
 
 @media (min-width: 768px) {
-  /* Tablette */
+  footer {
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+    padding-block: 20px;
+    border: solid 3px green;
+  }
+
+  .footer-title {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: solid 3px rebeccapurple;
+  }
 }
 
 @media (min-width: 1024px) {
