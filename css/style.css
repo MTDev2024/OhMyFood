@@ -478,7 +478,8 @@ footer i {
   padding-right: 8px;
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
+  /* Tablette */
   footer {
     height: 115px;
     display: flex;
@@ -486,7 +487,6 @@ footer i {
     align-items: center;
     padding-inline: 20px;
     padding-block: 20px;
-    border: solid 3px green;
   }
 
   .footer-title {
@@ -500,11 +500,10 @@ footer i {
     align-items: center;
     padding: 0;
     margin: 0;
-    border: solid 3px rebeccapurple;
   }
 }
 
-@media (min-width: 1024px) {
+@media (width >= 1024px) {
   /* Desktop */
 
   .section-wrapper {
@@ -576,19 +575,13 @@ footer i {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row-reverse;
+    align-items: flex-end; 
+    justify-content: end;
     padding-right: 70px;
-    height: 115px;
+    flex-direction: row-reverse;
   }
 
-  .footer-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 0;
-    margin: 0;
-    padding-bottom: 20px;
-  }
+
 
   footer ul {
     display: flex;
@@ -599,9 +592,5 @@ footer i {
 
   footer ul li {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 0;
-    margin: 0;
   }
 }
