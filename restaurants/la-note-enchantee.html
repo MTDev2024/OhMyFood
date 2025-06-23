@@ -14,11 +14,213 @@
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="../css/restaurants.css">
   <title>La note enchantée – Ohmyfood</title>
 </head>
 
 <body>
-    
+        <main class="main-container">
+      <header>
+        <nav>
+          <div class="site-goback">
+            <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+          </div>
+          <h1 class="site-title">Ohmyfood</h1>
+        </nav>
+      </header>
+
+      <!-- IMAGE DU RESTAURANT -->
+      <section class="restaurant-img">
+        <img
+          src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+          alt="Photo du plat"
+        />
+      </section>
+
+      <!-- CONTENU DU MENU -->
+      <section class="menu-section">
+        <div class="menu-container">
+          <div class="menu-header">
+            <h2 class="restaurant-title">La note enchantée</h2>
+            <button class="card-favorite" aria-label="J’aime">
+              <!-- Cœur contour (bordure noire) -->
+              <svg
+                class="heart-outline"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                />
+              </svg>
+
+              <!-- Cœur rempli (avec dégradé), caché au départ -->
+              <svg
+                class="heart-fill"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <defs>
+                  <linearGradient id="grad1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#A776E0" />
+                    <stop offset="100%" stop-color="#FF94E1" />
+                  </linearGradient>
+                </defs>
+                <path
+                  fill="url(#grad1)"
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <!-- ENTRÉES -->
+          <section class="menu-category">
+            <h3 class="menu-category-title">ENTRÉES</h3>
+            <div class="menu-items">
+
+              <article class="menu-item">
+                <h4>Ravioles de foie gras</h4>
+                <div class="item-text">
+                  <p>Accompagnées de leur crème à la truffe</p>
+                  <span class="item-price">25€</span>
+                  <div class="square">
+                    <div class="check">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+
+              <!-- <div class="boutonmenu">
+            <div class="description">
+              <div class="nom"><p>Fricassée d'escargot</p></div>
+              <div class="ingredient"><p>Au piment d'espelette</p></div>
+              <div class="prix"><p>25€</p></div>
+            </div>
+            <div class="checkmark">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </div> -->
+
+
+              <article class="menu-item">
+                <h4>Caviar osciètre</h4>
+                <div class="item-text">
+                  <p>Sur blini à la farine de blé noir</p>
+                  <span class="item-price">35€</span>
+                </div>
+              </article>
+              <article class="menu-item">
+                <h4>Homard et espuma de potiron</h4>
+                <div class="item-text">
+                  <p>Marinés aux zestes d'orange</p>
+                  <span class="item-price">20€</span>
+                </div>
+              </article>
+              <article class="menu-item">
+                <h4>Foie gras de canard cuit entier</h4>
+                <div class="item-text">
+                  <p>Confiture de figue et pain toasté</p>
+                  <span class="item-price">35€</span>
+                </div>
+              </article>
+            </div>
+          </section>
+          <!-- PLATS -->
+          <section class="menu-category">
+            <h3 class="menu-category-title">PLATS</h3>
+            <div class="menu-items">
+              <article class="menu-item">
+                <h4>Noix de coquilles Saint-Jacques</h4>
+                <div class="item-text">
+                  <p>Sur lit de purée de céleri-rave</p>
+                  <span class="item-price">40€</span>
+                </div>
+              </article>
+              <article class="menu-item">
+                <h4>Langoustine poêlée</h4>
+                <div class="item-text">
+                  <p>Purée de patate douce</p>
+                  <span class="item-price">35€</span>
+                </div>
+              </article>
+              <article class="menu-item">
+                <h4>Mijoté de queue de boeuf</h4>
+                <div class="item-text">
+                  <p>Et riz sauvage et zestes de citron</p>
+                  <span class="item-price">45€</span>
+                </div>
+              </article>
+            </div>
+          </section>
+          <!-- DESSERTS -->
+          <section class="menu-category">
+            <h3 class="menu-category-title">DESSERTS</h3>
+            <div class="menu-items">
+              <article class="menu-item">
+                <h4>Macaron noisette et chocolat</h4>
+                <div class="item-text">
+                  <p>Glace au caramel brun et sel de Guérande</p>
+                  <span class="item-price">18€</span>
+                </div>
+              </article>
+              <article class="menu-item">
+                <h4>Baba au rhum revisité</h4>
+                <div class="item-text">
+                  <p>Avec son coulis de citron</p>
+                  <span class="item-price">22€</span>
+                </div>
+              </article>
+              <article class="menu-item">
+                <h4>Tarte au citron meringuée</h4>
+                <div class="item-text">
+                  <p>Déstructurée</p>
+                  <span class="item-price">23€</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- BOUTON COMMANDER -->
+          <div class="menu-button">
+            <button class="btn-order">Commander</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="site-footer" aria-label="Pied de page">
+        <div class="footer-title">Ohmyfood</div>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-utensils"></i>Proposer un restaurant</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a
+            >
+          </li>
+          <li>
+            <a href="#">Mentions légales</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </footer>
+    </main>
 </body>
 </html>
