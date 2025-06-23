@@ -93,9 +93,16 @@ l’élément est "accroché par le haut", pas centré. */
   animation: fadeUp 0.8s ease-out forwards;
 }
 
+/* .menu-header {
+  display: flex;
+  justify-content: space-between;
+} */
+
 .menu-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative; /* .card-favorite s'aligne */
 }
 
 .restaurant-title {
@@ -116,8 +123,8 @@ l’élément est "accroché par le haut", pas centré. */
 
 .card-favorite {
   position: absolute;
-  top: 45px;
-  right: 30px;
+  top: 30px; /* ou ajuste si besoin */
+  right: 0;
   background: none;
   border: none;
   padding: 0;
@@ -125,7 +132,7 @@ l’élément est "accroché par le haut", pas centré. */
   width: 40px;
   height: 40px;
   display: flex;
-  overflow: hidden; /* pour clip-path */
+  overflow: hidden;
 }
 
 .heart-fill {
@@ -173,9 +180,7 @@ l’élément est "accroché par le haut", pas centré. */
   width: 100%;
 }
 
-
 /* ANIMATION ITEM RESTAURANT */
-
 
 .menu-item {
   position: relative;
@@ -192,9 +197,6 @@ l’élément est "accroché par le haut", pas centré. */
   opacity: 0;
   margin-bottom: 12px;
 }
-
-
-
 
 .square {
   position: absolute;
@@ -230,7 +232,6 @@ l’élément est "accroché par le haut", pas centré. */
   animation: rotateCheck 0.6s ease forwards;
 }
 
-
 @keyframes rotateCheck {
   from {
     transform: rotate(0deg);
@@ -241,7 +242,6 @@ l’élément est "accroché par le haut", pas centré. */
 }
 
 /* FIN ANIMATION ITEM RESTAURANT */
-
 
 .menu-item h4 {
   font-family: var(--font-body-text);
@@ -258,7 +258,6 @@ l’élément est "accroché par le haut", pas centré. */
   justify-content: space-between;
   width: 100%;
 }
-
 
 .item-text p {
   padding-left: 10px;
@@ -319,7 +318,6 @@ l’élément est "accroché par le haut", pas centré. */
   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-
 /*********** FOOTER ***********/
 
 footer {
@@ -354,24 +352,23 @@ footer i {
   padding-right: 8px;
 }
 
-
-/* 
+/* TEST */
 .checkmark i {
-    display: none;
+  display: none;
 }
 
 .checkmark {
-    position: absolute;
-    background: #99E2D0;
-    border-radius: 0 15px 15px 0;
-    margin-top: -76px;
-    right: 0px;   
-    height: 70px;
-    width: 0px;
-    transition: all 0.5s ease;
-} */
+  position: absolute;
+  background: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  margin-top: -76px;
+  right: 0px;
+  height: 70px;
+  width: 0px;
+  transition: all 0.5s ease;
+}
 
-
+/* TEST */
 
 @media (width >= 768px) {
   /* Tablette */
@@ -471,19 +468,25 @@ footer i {
     margin: 0 auto;
   }
 
-
   .menu-container {
     display: flex;
     width: 634px;
   }
 
   .menu-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+  }
 
-}
+  .card-favorite {
+    position: relative; /* Garder la superposition */
+    top: auto;
+    right: auto;
+    width: 40px;
+    height: 40px;
+  }
 
   .footer-wrapper {
     background-color: var(--grey-background);
@@ -494,13 +497,11 @@ footer i {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
-    align-items: flex-end; 
+    align-items: flex-end;
     justify-content: end;
     padding-right: 70px;
     flex-direction: row-reverse;
   }
-
-
 
   footer ul {
     display: flex;
