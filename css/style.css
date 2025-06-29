@@ -8,7 +8,6 @@
 }
 
 /*********** General ***********/
-
 :root {
   --primary-color: #9356dc;
   --secondary-color: #ff79da;
@@ -29,31 +28,26 @@
 }
 
 /*********** LOADER ***********/
-/* Wrapper qui couvre tout l'écran avec un fond flouté semi-transparent */
-
 .loader-wrapper {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(
-    255,
-    255,
-    255,
-    0.85
-  ); /* Fond blanc avec un peu de transparence */
-  backdrop-filter: blur(3px); /* Effet de flou sur l’arrière-plan */
+  background: rgba(255,255,255,0.85); 
+  
+  /* Fond blanc */
+  backdrop-filter: blur(3px); 
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  animation: loader-wrapper-animation 3s ease-in forwards; /* Animation de disparition */
+  animation: loader-wrapper-animation 3s ease-in forwards;
 }
 
-/* Conteneur du loader : centré, avec le logo à l’intérieur */
+/* Conteneur du loader */
 .loader {
-  position: relative; /* Nécessaire pour positionner le ::before */
+  position: relative; /* pour positionner le ::before */
   width: 140px;
   height: 140px;
   display: flex;
@@ -67,23 +61,21 @@
   position: absolute;
   width: 140px;
   height: 140px;
-  border-radius: 50%; /* Cercle parfait */
-  border: 8px solid transparent; /* Bordures invisibles par défaut */
-  border-top-color: var(
-    --tertiary-color
-  ); /* Seulement le haut et le bas sont colorés */
+  border-radius: 50%; 
+  border: 8px solid transparent;
+  border-top-color: var(--tertiary-color);
   border-bottom-color: var(--tertiary-color);
-  animation: spin 1.5s linear infinite; /* Rotation infinie */
+  animation: spin 1.5s linear infinite;
 }
 
-/* Logo au centre, fixe */
+/* Logo au centre */
 .loader img {
   width: 100px;
   height: auto;
-  z-index: 1; /* Par-dessus le ::before */
+  z-index: 1; 
 }
 
-/* Animation de rotation du cercle */
+/* Rotation du cercle */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -93,7 +85,7 @@
   }
 }
 
-/* Animation pour faire disparaître le loader après 3s */
+/* Disparition du loader */
 @keyframes loader-wrapper-animation {
   0%,
   80% {
@@ -105,7 +97,6 @@
     visibility: hidden;
   }
 }
-
 /*********** FIN LOADER ***********/
 
 a {
@@ -160,13 +151,6 @@ nav {
 .fa-location-dot {
   color: rgba(53, 53, 53, 1);
 }
-
-/* .site-location-description {
-  font-family: var(--font-body-text);
-  color: rgba(53, 53, 53, 1);
-  font-weight: 500;
-  font-size: 16px;
-} */
 
 input {
   font-family: var(--font-body-text);
@@ -580,8 +564,6 @@ footer i {
     padding-right: 70px;
     flex-direction: row-reverse;
   }
-
-
 
   footer ul {
     display: flex;
