@@ -80,7 +80,7 @@ nav {
   margin-top: -40px;
   position: relative;
   
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .menu-container {
@@ -90,6 +90,7 @@ nav {
   width: 100%;
   padding: 17px;
   animation: fadeUp 0.8s ease-out forwards;
+
    /* border: 2px solid red; */
 }
 
@@ -357,7 +358,8 @@ footer {
   background-color: var(--grey-background);
   color: white;
   padding-left: 15px;
-   border: 2px solid orange;
+  
+   /* border: 2px solid orange; */
 }
 
 .footer-title {
