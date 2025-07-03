@@ -29,7 +29,7 @@ L’interface devra être responsive, respecter les standards d’accessibilité
 
 Projet-03-Ohmyfood/  
 ├── index.html 
-├── restaurants/        
+├── restaurants/
 │   ├── a-la-francaise.html
 │   ├── la-note-enchantee.html
 │   ├── la-palette-du-gout.html
