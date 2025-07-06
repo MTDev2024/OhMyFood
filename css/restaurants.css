@@ -183,31 +183,34 @@ nav {
   position: relative;
   border-radius: 15px;
   display: flex;
-  flex-direction: column;
   background: #fff;
-  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4.01px 15.04px rgba(0, 0, 0, 0.1);
   animation: fadeUp 0.6s ease-out forwards;
   opacity: 0;
   margin-bottom: 12px;
-  overflow: hidden; /* Eviter que le carré ne dépasse */
-}
-
-.menu-item label {
-  cursor: pointer;
-  width: 100%;
-  display: block;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  gap: 5px;
+  overflow: hidden;
 }
 
 .menu-item input[type="checkbox"] {
-  display: none; 
+  display: none;
 }
 
-/* Carré vert initialement caché */
+.menu-content {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  /* transition: padding-right 0.4s ease, background-color 0.4s ease; */
+}
+
+/* Zone cliquable sur tout l'article */
+.menu-label {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Carré vert */
 .square {
   position: absolute;
   top: 0;
@@ -222,19 +225,17 @@ nav {
   transform: translateX(100%);
   opacity: 0;
   transition: transform 0.4s ease, opacity 0.4s ease;
+  pointer-events: none;
   z-index: 1;
 }
 
-/* checkbox hack */
-.menu-item input[type="checkbox"]:checked ~ label .square {
+.menu-item input[type="checkbox"]:checked + .menu-content .square {
   transform: translateX(0);
   opacity: 1;
 }
 
-/* Décalage du contenu pour laisser la place au carré */
-.menu-item input[type="checkbox"]:checked ~ label .item-text {
-  padding-right: 70px; /* espace pour la coche */
-  transition: padding-right 0.4s ease;
+.menu-item input[type="checkbox"]:checked + .menu-content .item-text {
+  padding-right: 70px;
 }
 
 .check i {
@@ -243,12 +244,11 @@ nav {
   color: white;
 }
 
-/* Rotation de la coche */
-.menu-item input[type="checkbox"]:checked ~ label .check i {
+.menu-item input[type="checkbox"]:checked + .menu-content .check i {
   animation: rotateCheck 0.6s ease;
 }
 
-/* Texte trop long */
+/* Texte long */
 .menu-item h4,
 .item-text p {
   white-space: nowrap;
@@ -260,19 +260,15 @@ nav {
   font-family: var(--font-body-text);
   font-weight: 500;
   font-size: 18px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 7px;
+  padding: 0 10px 7px;
 }
 
 .item-text {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
   transition: padding-right 0.4s ease;
 }
 
@@ -280,7 +276,6 @@ nav {
   font-family: var(--font-body-text);
   font-weight: 300;
   font-size: 15px;
-  color: #000;
   margin: 0;
 }
 
@@ -291,10 +286,9 @@ nav {
   text-align: right;
   max-width: 100px;
   padding-left: 10px;
-  transition: transform 0.4s ease;
 }
 
-/* Rotation de la coche */
+/* Animations */
 @keyframes rotateCheck {
   from {
     transform: rotate(0deg);
@@ -304,7 +298,6 @@ nav {
   }
 }
 
-/* Animation fade-up */
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -319,6 +312,8 @@ nav {
 .menu-item:nth-child(1) { animation-delay: 0.2s; }
 .menu-item:nth-child(2) { animation-delay: 0.4s; }
 .menu-item:nth-child(3) { animation-delay: 0.6s; }
+.menu-item:nth-child(4) { animation-delay: 0.8s; }
+
 
 /******** FIN MENU-ITEM  ********/
 
