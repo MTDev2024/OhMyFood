@@ -27,6 +27,7 @@ L’interface devra être responsive, respecter les standards d’accessibilité
 
 🗂️ Structure du Projet
 
+```
 Projet-03-Ohmyfood/  
 ├── index.html 
 ├── restaurants/
@@ -40,7 +41,7 @@ Projet-03-Ohmyfood/
 ├── images/ 
 └── README.md
 
----
+```
 
 🚀 Fonctionnalités
 
