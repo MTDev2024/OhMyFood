@@ -20,7 +20,7 @@ L’interface devra être responsive, respecter les standards d’accessibilité
 ![Accueil Ohmyfood](./images/screenshots/desktop.png)
 
 ### Exemple de menu Mobile
-![Menu restaurant](./images/screenshots/mobile.png)
+![Menu restaurant](./images/screenshots/menu-mobile.png)
 
 
 ---
