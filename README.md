@@ -14,13 +14,13 @@ L’interface devra être responsive, respecter les standards d’accessibilité
 📸 Aperçu du projet
 
 ### Page d’accueil Mobile
-![Vue mobile](./images/screenshots/mobile.png)
+<img src="./images/screenshots/mobile.png" alt="Vue mobile" width="300"/>
 
 ### Page d’accueil Desktop 
-![Accueil Ohmyfood](./images/screenshots/desktop.png)
+<img src="./images/screenshots/desktop.png" alt="Accueil Ohmyfood" width="500"/>
 
 ### Exemple de menu Mobile
-![Menu restaurant](./images/screenshots/menu-mobile.png)
+<img src="./images/screenshots/menu-mobile.png" alt="Menu restaurant" width="300"/>
 
 
 ---
@@ -33,7 +33,7 @@ Projet-03-Ohmyfood/
 │   ├── a-la-francaise.html
 │   ├── la-note-enchantee.html
 │   ├── la-palette-du-gout.html
-│   ├── le-delice-des-sens
+│   ├── le-delice-des-sens.html
 ├── css/  
 │   ├── style.css
 │   ├── restaurant.css
