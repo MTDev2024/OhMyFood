@@ -13,14 +13,14 @@ L’interface devra être responsive, respecter les standards d’accessibilité
 
 📸 Aperçu du projet
 
-### Version mobile  
-![Vue mobile](assets/mobile-view.png)
+### Page d’accueil Mobile
+![Vue mobile](./images/screenshots/mobile.png)
 
-### Page d’accueil  
-![Accueil Ohmyfood](images/screeshots/desktop.png)
+### Page d’accueil Desktop 
+![Accueil Ohmyfood](./images/screenshots/desktop.png)
 
-### Exemple de menu  
-![Menu restaurant](assets/menu.png)
+### Exemple de menu Mobile
+![Menu restaurant](./images/screenshots/mobile.png)
 
 
 ---
