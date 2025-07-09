@@ -58,7 +58,7 @@ Projet-03-Ohmyfood/
 
 - HTML5
 - CSS3
-- Flexbox & Grid
+- Flexbox
 - Animations CSS (`@keyframes`, `transition`)
 - Responsive Design (mobile, tablette, desktop)
 
