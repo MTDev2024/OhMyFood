@@ -4,7 +4,7 @@
 
 Ohmyfood est un projet de site web permettant aux utilisateurs de consulter les menus de restaurants gastronomiques et de composer leur repas à l’avance.
 
-Ce projet est réalisé en tant que développeur web au sein de la start-up Ohmyfood.
+Ce projet est réalisé en tant que développeur au sein de la start-up Ohmyfood.
 
 L'objectif principal est d'intégrer l'interface du site à l’aide de HTML et CSS, en suivant les maquettes fournies par l’UI designer. 
 L’interface devra être responsive, respecter les standards d’accessibilité, et intégrer des animations soignées.
@@ -72,6 +72,10 @@ Pour garantir la qualité du code, nous utilisons les validateurs W3C :
 - ✅ Validateur CSS
 
 ---
+
+🔗 Démo en ligne :
+(https://mtdev2024.github.io/OhMyFood/index.html)
+
 
 ⚙️ Installation
 
