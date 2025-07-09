@@ -73,8 +73,7 @@ Pour garantir la qualité du code, nous utilisons les validateurs W3C :
 
 ---
 
-🔗 Démo en ligne :
-(https://mtdev2024.github.io/OhMyFood/index.html)
+🔗  [Voir le site en ligne](https://mtdev2024.github.io/OhMyFood/index.html)
 
 
 ⚙️ Installation
