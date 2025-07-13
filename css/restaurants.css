@@ -113,14 +113,22 @@ nav {
 
 .card-favorite svg {
   position: absolute;
+   top: 0;
+  left: 0;
   width: 24px;
   height: 24px;
 }
 
+.heart-outline {
+  stroke: black;
+  fill: none;
+  z-index: 2;
+}
+
 .card-favorite {
   position: absolute;
-  top: 30px;
-  right: 0;
+  /* top: 30px;
+  right: 0; */
   background: none;
   border: none;
   padding: 0;
@@ -128,7 +136,9 @@ nav {
   width: 40px;
   height: 40px;
   display: flex;
-  overflow: hidden;
+    align-items: center;
+  justify-content: center;
+  overflow: hidden; /* pour clip-path */
 }
 
 .heart-fill {
@@ -140,6 +150,11 @@ nav {
 
 .card-favorite:hover .heart-fill {
   clip-path: inset(0 0 0 0);
+}
+
+.card-favorite:hover .heart-outline {
+  stroke: transparent;
+  transition: stroke 0.3s ease;
 }
 
 .menu-category {
