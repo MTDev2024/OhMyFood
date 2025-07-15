@@ -61,7 +61,6 @@ nav {
   font-weight: 400;
   font-style: italic;
   font-size: 30px;
-  line-height: 100%;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -79,8 +78,6 @@ nav {
   border-radius: 40px 40px 0 0;
   margin-top: -40px;
   position: relative;
-
-  /* border: 2px solid green; */
 }
 
 .menu-container {
@@ -90,8 +87,6 @@ nav {
   width: 100%;
   padding: 17px;
   animation: fadeUp 0.8s ease-out forwards;
-
-  /* border: 2px solid red; */
 }
 
 .menu-header {
@@ -127,8 +122,6 @@ nav {
 
 .card-favorite {
   position: absolute;
-  /* top: 30px;
-  right: 0; */
   background: none;
   border: none;
   padding: 0;
@@ -138,8 +131,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  /* pour clip-path */
+  overflow: hidden;  /* pour clip-path */
 }
 
 .heart-fill {
@@ -207,8 +199,18 @@ nav {
   overflow: hidden;
 }
 
-.menu-item input[type="checkbox"] {
-  display: none;
+input[type="checkbox"] {
+  position: absolute;   /* N’occupe plus d’espace */
+  opacity: 0;           /* Non visible */
+  width: 1px;           /* Taille minuscule */
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);  /* cache totalement l’élément (clip) */
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
 }
 
 .menu-content {
@@ -228,7 +230,6 @@ nav {
   z-index: 2;
 }
 
-/* Carré vert */
 .square {
   position: absolute;
   top: 0;
@@ -252,7 +253,8 @@ nav {
   opacity: 1;
 }
 
-.menu-item input[type="checkbox"]:checked+.menu-content .item-text {
+.menu-item input[type="checkbox"]:checked + .menu-content h4,
+.menu-item input[type="checkbox"]:checked + .menu-content .item-text {
   padding-right: 70px;
 }
 
@@ -267,8 +269,9 @@ nav {
 }
 
 /* Texte long */
-.menu-content h4,
-.item-text p {white-space: nowrap;
+.menu-item h4,
+.item-text p {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   min-width: 0;
@@ -281,6 +284,7 @@ nav {
   font-weight: 500;
   font-size: 18px;
   padding: 0 10px 7px;
+  transition: padding-right 0.4s ease; 
 }
 
 .item-text {
@@ -346,7 +350,6 @@ nav {
 .menu-item:nth-child(4) {
   animation-delay: 0.8s;
 }
-
 
 /******** FIN MENU-ITEM  ********/
 
