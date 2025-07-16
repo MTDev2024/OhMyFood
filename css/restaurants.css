@@ -121,7 +121,7 @@ nav {
 }
 
 .card-favorite {
-  position: absolute;
+  position: relative;
   background: none;
   border: none;
   padding: 0;
@@ -512,7 +512,6 @@ footer i {
 
   .menu-section {
     max-width: 1095px;
-    /* margin: 0 auto; */
     margin-top: -40px;
     margin-left: auto;
     margin-right: auto;
